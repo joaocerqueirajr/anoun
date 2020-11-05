@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Anoun - Plataforma de Conexão Veicular</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-transition="slide" data-background="img/app.gif">
+                <div style="text-align: right;">
+                    <img style=" width: 90px; " src="img/logo_sem_fundo.png " alt=" ">
+                    <h4 style="color: write; font-size: 30px;">Anoun</h4>
+                    <br><br><br><br><br><br><br>
+                    <p style="text-align: left; font-size: 25px">Plataforma de <br>Conexão Veicular</p>
+                </div>
+            </section>
+
+            <section data-background-iframe="https://pt-br.padlet.com/joaocerqueirajr/anoun" data-background-interactive>
+                <h4>O que foi feito?</h4>
+            </section>
+
+            <section data-background-transition="slide" data-background="img/project.gif">
+                <div>
+                    <h4 style="color: white;">O que fará?</h4>
+                    <p style="color: white; font-size: 25px; text-align: justify;">
+                        - Projeto CAD 3D
+                        <br><br> - Desenvolvimento do Aplicativo
+                        <br><br> - Prototipagem Eletrônica - Proteus
+                        <br><br> - Compra de Componentes
+                        <br><br> - Realização de Testes
+                    </p>
+                </div>
+            </section>
+
+            <section data-background-transition="slide" data-background="img/obstacle.gif">
+                <div>
+                    <h4 style="color: white;">Obstáculos</h4>
+                    <p style="color: white; font-size: 25px; text-align: justify;">
+                        - Distânciamento Social
+                        <br><br> - Realização de Testes
+                        <br><br> - Desenvolvimento do Projeto Remotamente
+                        <br><br> - Conciliação com as Atividades das demais Disciplinas
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="dist/reveal.js "></script>
+    <script src="plugin/notes/notes.js "></script>
+    <script src="plugin/markdown/markdown.js "></script>
+    <script src="plugin/highlight/highlight.js "></script>
+    <script src="plugin/math/math.js "></script>
+
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            history: true,
+            transition: 'linear',
+
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full',
+                TeX: {
+                    Macros: {
+                        R: '\\mathbb{R}',
+                        set: ['\\left\\{#1 \\; ; \\; #2\\right\\}', 2]
+                    }
+                }
+            },
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+        });
+    </script>
+</body>
+
+</html>
